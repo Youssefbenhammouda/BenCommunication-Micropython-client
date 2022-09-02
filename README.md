@@ -1,4 +1,5 @@
 
+
 # BenCommunication-Micropython-client
 A **client** library that runs on the micropython side to communicate with [BenCommunication Server](link.com).
 
@@ -44,8 +45,11 @@ benclient.client() can have the following arguments:
 			"humidity":humidity 
 			}}, noreturn=True) # We set noreturn to true, this will make library continue without waiting for response.
 		sleep(60)
+
 		
+ Last tested  with MicroPython v1.19.1 on 2022-06-18; ESP module with ESP8266.
+ 
 **If you have any suggestions, feel free to fork and send a pull request.**
 **Thanks for reading :D**
   
- 
+
