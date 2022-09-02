@@ -11,7 +11,7 @@ BenCommunication use AES CBC algorithm to encrypt the traffic with a key file th
    payload.
  - Generate a unique ID for each request.
 ## Installation
-Download [benclient.py](link.com) and save it on the micropython main directory.
+Download [benclient.py](https://github.com/blaze-Youssef/BenCommunication-Micropython-client/blob/main/benclient.py) and save it on the micropython main directory.
 
 ## Object arguments
 benclient.client() can have the following arguments:
