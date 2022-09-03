@@ -28,7 +28,9 @@ class client:
         ivid, _ = self.s.recvfrom(self.buffersize)
         id = self._decrypt(encid,ivid,True)
         data = self._encrypt(data)
+
         js = {'hash':sha256(id+data[0]+data[1]).digest(), 'data':data[0], 'iv':data[1]}
+
         self.s.sendto(str(js), self.remoteADDR)
         if self.noreturn:
             return {}
@@ -72,6 +74,8 @@ class client:
     def send(self,data, noreturn=False):
         self.noreturn = noreturn
         if not type(data) == dict:raise KeyError("Argument must of type dict.")
+        if noreturn:
+            data["noreturn"] = True
         data = str(data)
         
         
