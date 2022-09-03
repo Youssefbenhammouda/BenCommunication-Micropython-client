@@ -64,6 +64,7 @@ Server Side see [BenCommunication-Micropython-Server](https://github.com/blaze-Y
 We get output:
 
 > Temperature: 30 
+
 > humidity: 50
 
 	
