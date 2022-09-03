@@ -1,7 +1,7 @@
 
 
 # BenCommunication-Micropython-client
-A **client** library that runs on the micropython side to communicate with [BenCommunication Server](link.com).
+A **python** library that runs on the micropython side to communicate with [BenCommunication Server](link.com).
 
 The BenCommunication project uses UDP protocol to communicate with the server, it can assure a secure communication between Micropython and Python scripts over the network.
 BenCommunication use AES CBC algorithm to encrypt the traffic with a key file that must be kept in a secure place.
@@ -19,7 +19,7 @@ benclient.client() can have the following arguments:
  1. host (str) => The ip of the server.
  2. port (int) => The port used by server.
  3. timeout (int) => (default=10) How much time to wait for response from server.
- 4. keyfile (str) => (default=key.sec) the keyfile, it contains 32 random bytes. You can generate a key with the server module. .
+ 4. keyfile (str) => (default=key.sec) the keyfile, it contains 32 random bytes. You can generate a key with the server module.
  5. buffersize (int) => (default=4096) The buffer for Udp Socket.
  
  benclient.client().send() can have the following arguments:
